@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praanaa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About Us</a></li>
+            <li><a href="#contact" onclick="scrollToFooter()">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <section id="first_page",class="one">
+            <img src="/Users/sudev-20602/Downloads/praanaa.png" alt="Description of the image" width="WIDTH" height="HEIGHT">
+            <p class="highlight-box"><b>LET PRAANAA FLOW THROUGH YOU</b></p>
+            <p class="highlight-box bottom-right"><b>JOIN OUR FREE YOGA CLASSES</b></p>
+        </section>
+    </header>
+
+    <main>
+        
+        <section id="second-page" class="two">
+
+            <p>
+                Namaskaaram, 
+We are glad that you are here! Here is a bit about us.
+Praanaa is the vital life force running inside of us. Any disruption to it's flow leads to sickness. We at PRAANAA focus on improving the over all experience of the practitioner, helping them to go deep within themselves and connect with the inner self, thus enabling the flow of praanaa.
+            </p>
+        </section>
+        <!-- <section id="third_page" class="one">
+            <div class="content">
+                <div class="text">
+                    <h2>Why don't we need yoga?</h2>
+                    <p>Are you new to the practice of yoga or are you looking to begin your yoga journey and are having some tough time to decide whether you have to take it up or not? Here is an exclusive workshop for yoga newbies. 
+                        Join us in this event to discover what yoga has to offer.
+                    </p>
+                </div>
+            <div class="image">
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_150,c_fill/dpr_2/image/diy/c80cf091-e2e5-4468-a0e6-b87595ca56db" alt="Yoga Image">
+            </div>
+    
+
+        </section> -->
+
+        <!-- <section id="third_page" class="two ">
+            <div class="content">
+                <div class="text">
+                    <h2>Shavasana to Srvangasana</h2>
+                    <p>Sarvangasana is a dream posture for many, it might seem difficult but nothing is unattainable. Join us as we explore the tricks and techniques to work ourselves from Shavasana to Sarvangasana.
+                    </p>
+                </div>
+            <div class="image">
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_150,c_fill/dpr_2/image/diy/c80cf091-e2e5-4468-a0e6-b87595ca56db" alt="Yoga Image">
+            </div>
+    
+
+        </section> -->
+
+        <section >
+            <h1>Our Offerings</h1>
+            <div class="container content one">
+                <div class="product">
+                    <img src="data:image/png;base64,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" alt="Product 1">
+                    <h2>Small Group Online Classes</h2>
+                    <p>Experience fitness from wherever you are. With only 5 students per Batch, this program offers personalized corrections and adjustments 
+                    </p>                
+                    </div>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Product 2">
+                    <h2>Product 2 Title</h2>
+                    <p>Take Your Practice to next level with Personal Training. Deepen your practice and explore with what you want to do and what suits your body.</p>
+                </div>
+            </div>
+            <button class="book-trial-button" onclick="scrollToSection('custom_forms')">Book Trial</button>
+            <style>
+                .book-trial-button {
+            display: inline-block; /* Make it a block element */
+            background-color: #C69D58; /* Button background color */
+            color: #F9F5F4; /* Button text color */
+            padding: 10px 15px; 
+            border: none; 
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; 
+            font-size: 16px; 
+           
+        }
+            </style>
+        </section>
+
+        <section id="custom_forms">
+            <!-- <script>
+                function submitForm(event) {
+                    event.preventDefault(); // Prevent the default form submission
+        
+                    const formData = new FormData(event.target);
+                    const data = {};
+                    formData.forEach((value, key) => {
+                        data[key] = value;
+                    });
+        
+                    console.log(data); // Debug log to check the data being sent
+        
+                    // Send data to Google Form
+                    fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6noAkI8rrlpdlzkUWW_SdbL4mMIVehhM3s6aoXHgnAIwKMA/formResponse', {
+                        method: 'POST',
+                        headers: {
+                            // 'Accept': 'application/json',
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: new URLSearchParams(data).toString(),
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Form submitted successfully!');
+                            // Optionally, reset the form
+                            event.target.reset();
+                        } else {
+                            console.log("error is" + response);
+                            alert('There was a problem with your submission.');
+                        }
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert('There was an error submitting the form.');
+                    });
+                }
+            </script> -->
+            <h1>Custom Form</h1>
+            <form id="customForm" onsubmit="submitForm(event)">
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="entry.2005620554" required><br><br>
+                
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="entry.1045781291" required><br><br>
+                
+                <label for="address">Address (required):</label>
+                <input type="text" id="address" name="entry.1065046570" required><br><br>
+                
+                <label for="phone">Phone Number (optional):</label>
+                <input type="text" id="phone" name="entry.1166974658"><br><br>
+                
+                <label for="comments">Comments (optional):</label>
+                <textarea id="comments" name="entry.839337160"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            <!-- <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
+            <script type="text/javascript">
+                // set the target on the form to point to a hidden iframe
+                // some browsers need the target set via JavaScript, no idea why...
+                document.getElementById('my-form').target = 'my-response-iframe';
+                // detect when the iframe reloads
+                var iframe = document.getElementById('my-response-iframe');
+                if (iframe) {
+                  iframe.onload = function () {
+                    alert('inside iframe');
+                  }
+                }
+             </script> -->
+        </section>
+
+
+
+        <section id="about" class="hidden two">
+            <h2>About Us</h2>
+            <p>This is the about us section.</p>
+        </section>
+
+        <section id="contact" class="hidden one">
+            <h2>Contact Us</h2>
+            <p>This is the contact us section.</p>
+        </section>
+        <!-- <section id="forms">
+            <h1>My Google Form</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAlzo06SDiRaA7rUPDV3jqcddFjjqlY28YpurClWl89crKdQ/viewform?embedded=true" 
+            width="640" height="3086" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>" 
+            
+        </section> -->
+
+        
+        
+        
+    </main>
+
+    <footer id="footer">
+        <h2>Get in touch with us</h2>
+        <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:praanaa.yoga@gmail.com">praanaa.yoga@gmail.com</a>
+        </p>
+        <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919170598574">+91 91705 98574</a>
+        </p>
+        <p>
+            <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/_praanaa_" target="_blank"> @_praanaa_ </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

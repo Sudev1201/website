@@ -1,0 +1,324 @@
+body {
+    /* border: 5px double #FFD700 ; */
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    background-color: #F9F5F4; /* Beige background */
+    
+    color: #4b3d3d; /* Dark brown text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+
+}
+
+
+
+header, main section {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Padding for content */
+}
+
+/* 
+header {
+    background-color: #F9F5F4; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+main {
+   
+
+    height: calc(100vh - 100px); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} */
+
+#main-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 100px); 
+    padding: 20px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 100px); 
+    padding: 20px;
+    position: relative; 
+}
+
+#first_page {
+    background-color: #F9F5F4;
+    text-align: center; /* Center text in the welcome section */
+}
+
+.one {
+    background-color: #F9F5F4;
+
+}
+
+.two {
+    background-color: #C69D58;
+}
+
+#about {
+    
+}
+
+#contact {
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex; /* Use flexbox */
+    background-color: #C69D58; /* Background color of the navbar */
+    overflow: hidden; /* Clear floats */
+    justify-content: flex-end; /* Align items to the right */
+    height: 60px; 
+
+
+    /* display: flex; 
+    background-color: #C69D58; 
+    overflow: hidden;
+    justify-content: flex-end;
+    justify-content: flex-end;
+    text-align: right; */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar li {
+    float: left; /* Align items horizontally */
+    
+}
+
+.navbar a {
+    display: block; /* Make links fill the entire list item */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover {
+    background-color: #F9F5F4; /* Change background on hover */
+    color: black; /* Change text color on hover */
+    border-radius: 8px;
+}
+
+.highlight-box {
+    background-color: #C69D58; /* Background color */
+    padding: 15px; /* Padding inside the box */
+    display: inline-block; /* Make the box only as wide as its content */
+    /* border: 2px solid orange; */
+    border-radius: 15px;
+    color: white; /* Text color */
+    font-size: 15px; /* Font size */
+}
+
+/* Positioning for the bottom right text box */
+.bottom-right {
+    position: absolute; /* Position the box absolutely */
+    bottom: 100px; /* Distance from the bottom */
+    right: 100px; /* Distance from the right */
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation */
+}
+
+/* Section Styles */
+#third_page {
+    padding: 20px; /* Padding around the section */
+}
+
+/* Flexbox Container */
+.content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+}
+
+/* Text Styles */
+.text {
+    flex: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Image Styles */
+.image {
+    flex: 0 0 300px; /* Set a fixed width for the image container */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+}
+
+.image img {
+    width: 300px; /* Make image responsive to the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+
+}
+
+
+.image{
+    flex: 1; 
+}
+
+.image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* .image-content {
+    flex: 1;
+    text-align: right;
+    overflow: hidden; 
+} */
+
+/* .image-content img {
+    max-width: 100%;
+    height: auto;
+    transform: translateX(100%); 
+    opacity: 0; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+} */
+
+footer {
+    background-color: #8b5a2b; /* Brown footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+    border-top: 1px solid #e0e0e0; /* Top border */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Heading Style */
+#footer h2 {
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Paragraph Styles */
+#footer p {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    margin: 10px 0; /* Space above and below paragraphs */
+    color: #555; /* Text color */
+}
+
+/* Icon Styles */
+#footer i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+    font-size: 1.2em; /* Icon size */
+}
+
+/* Link Styles */
+#footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#footer a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+
+
+/* Show elements when they are in view */
+.show {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fade in */
+}
+
+.show-text {
+    opacity: 1; /* Fade in text */
+    transform: translateY(0); /* Move to original position */
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Center the image */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+my-response-iframe{
+    visibility: hidden;
+    height: 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the products */
+    max-width: 1000px; /* Set a maximum width for the container */
+    height: 3600px;
+    margin: 0 auto; /* Center the container on the page */
+    background-color: #F9F5F4;
+}
+
+.product {
+    color: #F9F5F4;
+    background: #C69D58;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%; /* Width of each product */
+    height: 500px; /* Increase the height of each product */
+    margin: 30px; /* Add some space between products */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack products vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .product {
+        width: 90%; /* Make products take more width on small screens */
+    }
+}
